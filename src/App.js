@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+import "./App.css";
+// import Child1 from "./components/Child1";
+// import Child2 from "./components/Child2";
+// import Counter from './components/Counter';
+// import Fruits from "./components/Fruits";
+import Listall from "./components/Listall";
+// import Notes from "./components/Notes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // const [count, setCount] = useState(0);
+    // function updateCountInParent(c) {
+    //     setCount(c);
+    // }
+    return (
+        <div>
+            {/* <Fruits/> */}
+            {/* <Notes/> */}
+            {/* <p>Count in Parent :{count}</p>
+            <Child1 ParentCount={updateCountInParent} />
+            <Child2 count={count}/> */}
+            <Listall/>
+        </div>
+    );
 }
 
 export default App;

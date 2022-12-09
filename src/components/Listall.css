@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dee2e6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    background: none;
+}
+
+h1 {
+    font-family: 'Unbounded', cursive;
+    padding: 40px 20px 20px;
+    text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
+    color: #343a40;
+}
+
+.inputList {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid #343a40;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    font-family: 'Unbounded', cursive;
+    padding-inline: 30px;
+    background: none;
+    border: 3px solid #212529;
+    color: #212529;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    background-color: #343a40;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    top: 0;
+    right: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: #e9ecef;
+    border-color: #e9ecef;
+}
+
+.btn:hover::before {
+    transform: scale(2.2);
+    transform-origin: left;
+}
+
+.list {
+    list-style: none;
+    font-size: 3rem;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #343a40;
+    background-color: #f8f9fa;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.623);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.card-div {
+    display: flex;
+    gap: 10px;
+    background: none;
+    align-items: center;
+}
+
+.card-div p {
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.para {
+    background-color: #f8f9fa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+.card i {
+    background: none;
+}
+
+.todo-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #495057;
+    margin-top: 30px;
+}
+
+.footer i {
+    background: none;
+    color: #ced4da;
+    transition: 0.5s;
+}
+
+.footer i:hover {
+    color: #f8f9fa;
+}
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .inputList {
+        width: 85%;
+    }
+}
