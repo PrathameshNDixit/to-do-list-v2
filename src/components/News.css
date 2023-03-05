@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+}
+.grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-inline: auto;
+    margin-block: 50px;
+}
+.news-card{
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+}   
+.news-img{
+    width: 100%;
+}
+.news-head{
+    background-color: transparent;
+    padding-top: 30px;
+    font-weight: 900;
+}
+.news-desc{
+    background-color: transparent;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+.news-card .news-desc,.news-head{
+    padding-inline: 30px;
+}
+.btn{
+    background-color: none;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+.btn:active{
+    background-color: grey;
+}
+.exFeature{
+    border-radius: 20px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 3px;
+    background-color: none;
+    cursor: pointer;
+    border: 4px solid black;
+    font-weight: bold;
+    width: 15%;
+    color: black;
+    transition: 0.7s;
+}
+.exFeature:hover{
+    background-color: black;
+    color: white;
+}
+.btn-flex{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 20px;
+}
+.search-box{
+    background-color: none;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: 4px solid black;
+    font-size: 1.5rem;
+}
+.search-box:hover{
+    box-shadow: 3px 3px 3px 3px inset rgba(128, 128, 128, 0.404);
+}
+.container{
+    margin-block: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.search-btn{
+    width: 10%;
+    font-size: 1.5rem;
+    border: 4px solid black;
+    border-radius: 20px;
+    transition: 1s;
+}
+.search-btn:hover{
+    background-color: black;
+    color:white;
+}
+.container form{
+    width: 100%;
+}
